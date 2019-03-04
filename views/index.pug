@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    div.content
+        div#loading
+    div.container(style="display:none;position:fixed;top:50%;margin-top:-50px;" id='button')
+        div.row.parseCsv(style="height:60px;")
+            img(id='arrow1',src="/images/arrow.png", alt="",class='arrows col-1')
+            img(id='arrow2',src="/images/arrow.png", alt="",class='arrows col-1')
+            img(id='arrow3',src="/images/arrow.png", alt="",class='arrows col-1')
+            span(class='col-1')
+            a(id='parseCsv',class="btn btn-danger btn-lg btn-3d col-2") View CSV in Table
+            span(class='col-1')
+            a(href='/outputJson',id='outputJson',class="btn btn-primary btn-lg btn-3d col-2") Get CSV as JSON
+            span(class='col-1')
+    table(id='hotelsData')
+//-   h1= title
+//-   p Welcome to #{title}
