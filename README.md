@@ -1,4 +1,4 @@
-# [Node/Express CSV PARSER App]
+# Node/Express CSV PARSER App
 
 This app basically parses a CSV data and validate each type of data (name,stars and uri) 
 and returns it in two output formats:
